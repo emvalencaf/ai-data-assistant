@@ -1,0 +1,6 @@
+dataset
+.env
+/src/*/dataset
+/src/*/.env
+/src/*/.venv
+/src/*/logs
