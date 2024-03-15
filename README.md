@@ -25,7 +25,12 @@
         - [AI Data Assistant Structure](/src/ai-data-assistant/README.md#ai-data-assistant-structure)
         - [Accessing the Database via Amazon Athena](/src/ai-data-assistant/README.md#accessing-the-database-via-amazon-athena)
         - [Chatbot with a Data Analyst Assistant Role](/src/ai-data-assistant/README.md#chatbot-with-a-data-analyst-assistant-role)
-- [Data Ingestion Code](/src/load-local-data-into-s3/README.md#documentation)
+- [Load Local Data Into S3 Source Code](/src/load-local-data-into-s3/README.md#documentation)
+    - [About the Source Code](/src/load-local-data-into-s3/README.md#about-the-source-code)
+        - [Required Policies for Load Local Data Into S3 Operation](/src/load-local-data-into-s3/README.md#required-policies-for-load-local-data-into-s3-operation)
+        - [Usage of the Source Code](/src/load-local-data-into-s3/README.md#usage-of-the-source-code)
+    - [Considerations on Load Local Data Into S3 Operation](/src/load-local-data-into-s3/README.md#)
+        - [Structure of Load Local Data Into S3](/src/load-local-data-into-s3/README.md#structure-of-load-local-data-into-s3)
 
 ### About the Project
 
@@ -73,6 +78,11 @@ The AWS architecture used preferred AWS Lambda, AWS Glue, AWS Athena, Amazon S3,
         - [Acesso ao banco de dados por meio do Amazon Athena](/src/ai-data-assistant/README.md#acesso-ao-banco-de-dados-por-meio-do-amazon-athena)
         - [Chatbot com um papel de Data Analyst Assistant](/src/ai-data-assistant/README.md#um-chatbot-com-um-papel-de-data-analyst-assistant)
 - [Código da Ingestão de Dados](/src/load-local-data-into-s3/README.md#documentação)
+    - [Sobre o Código Fonte](/src/load-local-data-into-s3/README.md#sobre-o-código-fonte)
+        - [Políticas Necessárias para o Funcionamento do Load Local Data Into S3](/src/load-local-data-into-s3/README.md#políticas-necessárias-para-o-funcionamento-do-load-local-data-into-s3)
+        - [Uso do Código Fonte](/src/load-local-data-into-s3/README.md#uso-do-código-fonte)
+    - [Considerações sobre o funcionamento do Load Local Data Into S3](/src/load-local-data-into-s3/README.md#)
+        - [A Estrutura do Load Local Data Into S3](/src/load-local-data-into-s3/README.md#a-estrutura-do-load-local-data-into-s3)
 
 ### Sobre o Projeto
 

@@ -1,7 +1,18 @@
 # AI Data Assistant: AI Data Assistant Source Code
+
 ## Summary
+
 - [Documentation (Brazilian Portuguese)](/README.md#documentação)
+    - [Sumário da Documentação](/README.md#sumário-da-documentação)
+    - [Sobre o Projeto](/README.md#sobre-o-projeto)
+    - [A Arquitetura do Projeto](/README.md#a-arquitetura-do-projeto)
+    - [Fontes](/README.md#fontes)
 - [Documentation (USA English)](/README.md#documentation)
+    - [Documentation Summary](/README.md#documentation-summary)
+    - [About the Project](/README.md#about-the-project)
+    - [Project Architecture](/README.md#project-architecture)
+    - [Sources](/README.md#sources)
+
 
 ## Documentation
 
@@ -15,7 +26,8 @@
         - [AI Data Assistant Structure](/src/ai-data-assistant/README.md#ai-data-assistant-structure)
         - [Accessing the Database via Amazon Athena](/src/ai-data-assistant/README.md#accessing-the-database-via-amazon-athena)
         - [Chatbot with a Data Analyst Assistant Role](/src/ai-data-assistant/README.md#chatbot-with-a-data-analyst-assistant-role)
-- [Data Ingestion Code](/src/load-local-data-into-s3/README.md#documentation)
+- [Load Local Data Into S3 Source Code](/src/load-local-data-into-s3/README.md#documentation)
+
 
 ### About the Source Code: AI Data Assistant
 
@@ -221,7 +233,12 @@ On the other hand, `DB_INFO` should receive a brief summary of what the database
         - [Estrutura do AI Data Assistant](/src/ai-data-assistant/README.md#a-estrutura-do-ai-data-assistant)
         - [Acesso ao banco de dados por meio do Amazon Athena](/src/ai-data-assistant/README.md#acesso-ao-banco-de-dados-por-meio-do-amazon-athena)
         - [Chatbot com um papel de Data Analyst Assistant](/src/ai-data-assistant/README.md#um-chatbot-com-um-papel-de-data-analyst-assistant)
-- [Código da Ingestão de Dados](/src/load-local-data-into-s3/README.md#documentação)
+- [Código Fonte do Load Local Data Into S3](/src/load-local-data-into-s3/README.md#documentação)
+    - [Sobre o Código Fonte](/src/load-local-data-into-s3/README.md#sobre-o-código-fonte)
+        - [Políticas Necessárias para o Funcionamento do Load Local Data Into S3](/src/load-local-data-into-s3/README.md#políticas-necessárias-para-o-funcionamento-do-load-local-data-into-s3)
+        - [Uso do Código Fonte](/src/load-local-data-into-s3/README.md#uso-do-código-fonte)
+    - [Considerações sobre o funcionamento do Load Local Data Into S3](/src/load-local-data-into-s3/README.md#)
+        - [A Estrutura do Load Local Data Into S3](/src/load-local-data-into-s3/README.md#a-estrutura-do-load-local-data-into-s3)
 
 ### Sobre o Código Fonte: AI Data Assistant
 
