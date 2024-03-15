@@ -54,7 +54,7 @@ class LoaderService:
         # current date
         current_date = datetime.now()
 
-        keyS3 = f"{s3_zone}/{filetype.upper()}/{filename.split('.')[0].capitalize()}/{current_date.year}/{current_date.month}/{current_date.day}/{filename}"
+        keyS3 = f"{s3_zone.capitalize()}/{filetype.upper()}/{filename.split('.')[0].capitalize()}/{current_date.year}/{current_date.month}/{current_date.day}/{filename}"
 
         try:
             print(f'[System]: start to load the {filename} (located at: {filePath})...')
