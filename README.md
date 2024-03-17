@@ -5,11 +5,13 @@
 - [Documentation (Brazilian Portuguese)](/README.md#documentação)
     - [Sumário da Documentação](/README.md#sumário-da-documentação)
     - [Sobre o Projeto](/README.md#sobre-o-projeto)
+        - [Adaptações do Projeto](/README.md#adaptações-do-projeto)
     - [A Arquitetura do Projeto](/README.md#a-arquitetura-do-projeto)
     - [Fontes](/README.md#fontes)
 - [Documentation (USA English)](/README.md#documentation)
     - [Documentation Summary](/README.md#documentation-summary)
     - [About the Project](/README.md#about-the-project)
+        - [Project Adaptations](/README.md#project-adaptations)
     - [Project Architecture](/README.md#project-architecture)
     - [Sources](/README.md#sources)
 
@@ -36,6 +38,8 @@
 
 The `AI Data Assistant` project is a chatbot where users can inquire about data in a database and receive responses in natural language (human language). The project was developed for learning purposes in the area of Data Engineering, D&A in General, and AWS.
 
+![Diagram to show how the AI Data Assistant works](/docs/diagrams/AWSDiagram!AI%20DataAssistant%20Generic%20Logic.jpg)
+
 The project was divided into three stages:
 
 1. Data ingestion into AWS (via a Docker container)
@@ -43,6 +47,12 @@ The project was divided into three stages:
 3. Creation of an intelligent Data Assistant from a connection to the created database.
 
 The `AI Data Assistant` was developed using the [LangChain](https://python.langchain.com/docs/get_started/introduction) framework and the `Claude` LLM (Large Language Model) from [Anthropic](https://www.anthropic.com/news/introducing-claude) available on [AWS Bedrock](https://aws.amazon.com/pt/bedrock/?gclid=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE&trk=82b1c10f-8aa4-4e6c-ab52-c75550a4a31e&sc_channel=ps&ef_id=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE:G:s&s_kwcid=AL!4422!3!692006001529!e!!g!!aws%20bedrock!21054971723!164977098371) platform.
+
+
+#### Project Adaptations
+The data engineering process applied in the project was considerably simplified since the main focus was on working with the AI Data Assistant. However, it would be possible to add more stages to the Data Pipeline to meet the project's needs in cases where: (i) data from various sources (local, API, and other databases in AWS) are to be worked on, (ii) the AI Data Assistant database needs to adhere to a specific business rule, or (iii) unstructured or semi-structured data is involved.
+
+For the aforementioned cases, for example, an AWS Lambda function could be created for data ingestion from an API, and AWS Glue jobs could be created to transform unstructured and semi-structured data into structured data, and then modeled according to the logical model that meets the business rules of the database.
 
 ### Project Architecture
 
@@ -88,6 +98,8 @@ The AWS architecture used preferred AWS Lambda, AWS Glue, AWS Athena, Amazon S3,
 
 O projeto `AI Data Assistant` é um *chatbot* em que o usuário pode perguntar sobre os dados em um banco de dados e receber resposta em linguagem natural (linguagem humana). O projeto foi desenvolvido para fins de aprendizado na área de Engenharia de Dados, D&A em Geral e AWS.
 
+![Diagram to show how the AI Data Assistant works](/docs/diagrams/AWSDiagram!AI%20DataAssistant%20Generic%20Logic.jpg)
+
 O projeto foi dividido em três etapas:
 
 1. Ingestão dos dados na AWS (por meio de um *container* ***Docker***)
@@ -96,6 +108,11 @@ O projeto foi dividido em três etapas:
 
 O `AI Data Assistant` foi desenvolvido usando o framework da [LangChain](https://python.langchain.com/docs/get_started/introduction) e o LLM (*Large Language Model* ou Grande Modelo de Linguagem) `Claude` da [Anthropic](https://www.anthropic.com/news/introducing-claude) disponível no [AWS Bedrock](https://aws.amazon.com/pt/bedrock/?gclid=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE&trk=82b1c10f-8aa4-4e6c-ab52-c75550a4a31e&sc_channel=ps&ef_id=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE:G:s&s_kwcid=AL!4422!3!692006001529!e!!g!!aws%20bedrock!21054971723!164977098371)
 
+#### Adaptações do Projeto
+
+A processo de engenharia de dados aplicado no projeto foi bastante simplificado uma vez que a ideia foi trabalhar majoritariamente o `AI Data Assistant`. Entretanto, seria possível adicionar mais fases ao *Data Pipeline* para atender as necessidades do projeto nos casos em que serão trabalhados: (i) dados de várias origens (locais, de API e outros bancos de dados na AWS), (ii) o banco de dados do `AI Data Assistant` precisa atender a uma regra de negócio específica , ou, (iv) dados não-estruturados ou semi-estruturados.
+
+Para os casos acima citados, por exemplo, poderia ser criado uma função AWS Lambda para ingestão dos dados de uma API e criado *jobs* no AWS Glue para transformar os dados não-estruturados e semi-estruturados em dados estruturados e em seguida modelados de acordo com o modelo lógico que atenda as regras de negócio do banco dde dados.
 
 ### A Arquitetura do Projeto
 

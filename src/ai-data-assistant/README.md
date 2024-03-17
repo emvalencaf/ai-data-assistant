@@ -5,14 +5,15 @@
 - [Documentation (Brazilian Portuguese)](/README.md#documentação)
     - [Sumário da Documentação](/README.md#sumário-da-documentação)
     - [Sobre o Projeto](/README.md#sobre-o-projeto)
+        - [Adaptações do Projeto](/README.md#adaptações-do-projeto)
     - [A Arquitetura do Projeto](/README.md#a-arquitetura-do-projeto)
     - [Fontes](/README.md#fontes)
 - [Documentation (USA English)](/README.md#documentation)
     - [Documentation Summary](/README.md#documentation-summary)
     - [About the Project](/README.md#about-the-project)
+        - [Project Adaptations](/README.md#project-adaptations)
     - [Project Architecture](/README.md#project-architecture)
     - [Sources](/README.md#sources)
-
 
 ## Documentation
 
@@ -32,6 +33,8 @@
 ### About the Source Code: AI Data Assistant
 
 The `AI Data Assistant` was developed using the [LangChain](https://python.langchain.com/docs/get_started/introduction) framework and the `Claude` LLM (Large Language Model) from [Anthropic](https://www.anthropic.com/news/introducing-claude) available on [AWS Bedrock](https://aws.amazon.com/pt/bedrock/?gclid=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE&trk=82b1c10f-8aa4-4e6c-ab52-c75550a4a31e&sc_channel=ps&ef_id=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE:G:s&s_kwcid=AL!4422!3!692006001529!e!!g!!aws%20bedrock!21054971723!164977098371) platform. The role of this chatbot is:
+
+![Diagram to show how the AI Data Assistant works](/docs/diagrams/AWSDiagram!AI%20DataAssistant%20Generic%20Logic.jpg)
 
 1. Receive questions from an end user.
 2. Transform it into an SQL query.
@@ -200,6 +203,7 @@ Use the following table scheme to create your sql query:
 Assistant:
 ``` 
 
+![Dataflow Diagram of AI Data Assistant](/docs/diagrams/DFDDiagram!AIDataAssistant.jpg)
 
 During the development of the chatbot, it was learned that `Claude` performs better with more direct, objective, and clear instructions. The LLM not only needs a role such as: `You're a Data Analyst Assistant hired to answer questions to a businessman`; and a clear instruction of what to do: `When given an question, first create a syntactically correct postgresql query to run and then run it. Look at the results of the sql query, please answer this question: `; but also information on how to do it, what the database is about, and what is the table schema (or schemas).
 
@@ -244,11 +248,15 @@ On the other hand, `DB_INFO` should receive a brief summary of what the database
 
 O `AI Data Assistant` foi desenvolvido usando o *framework* da [LangChain](https://python.langchain.com/docs/get_started/introduction) e o LLM (*Large Language Model* ou Grande Modelo de Linguagem) `Claude` da [Anthropic](https://www.anthropic.com/news/introducing-claude) disponível no [AWS Bedrock](https://aws.amazon.com/pt/bedrock/?gclid=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE&trk=82b1c10f-8aa4-4e6c-ab52-c75550a4a31e&sc_channel=ps&ef_id=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE:G:s&s_kwcid=AL!4422!3!692006001529!e!!g!!aws%20bedrock!21054971723!164977098371), a sua função desse *chatbot* é:
 
+![Diagram to show how the AI Data Assistant works](/docs/diagrams/AWSDiagram!AI%20DataAssistant%20Generic%20Logic.jpg)
+
 1. Receber perguntas de um usuário-final;
 2. Transformá-la em uma SQL *query*;
 3. Executar essa SQL *query* por meio do Amazon Athena;
 4. Transformar os resultados da SQL *query* em linguagem natural;
 5. Enviar a resposta ao usuário final.
+
+![Dataflow Diagram of AI Data Assistant](/docs/diagrams/DFDDiagram!AIDataAssistant.jpg)
 
 As variáveis de ambiente necessárias se encontram no seguinte arquivo: [.env.example](/src/ai-data-assistant/.env.example)
 
@@ -408,6 +416,8 @@ Use the following table scheme to create your sql query:
 
 Assistant:
 ``` 
+
+![Dataflow Diagram of AI Data Assistant](/docs/diagrams/DFDDiagram!AIDataAssistant.jpg)
 
 Durante o desenvolvimento do *chatbot* foi aprendido que o `Claude` se dá melhor com instruções mais diretas, objetivas e claras. O LLM não só precisa de uma *role* como: `You're a Data Analyst Assistant hired to answer questions to a businessman`; e uma instrução clara do que fazer: `When given an question, first create a syntactically correct postgresql query to run and thenn run it. Look at the results of the sql query, please answer this question: `; como também informações de como fazer, sobre o quê é o banco de dados e qual é o esquema (*schema*) da tabela (ou tabelas).
 

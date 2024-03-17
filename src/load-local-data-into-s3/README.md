@@ -5,11 +5,13 @@
 - [Documentation (Brazilian Portuguese)](/README.md#documentação)
     - [Sumário da Documentação](/README.md#sumário-da-documentação)
     - [Sobre o Projeto](/README.md#sobre-o-projeto)
+        - [Adaptações do Projeto](/README.md#adaptações-do-projeto)
     - [A Arquitetura do Projeto](/README.md#a-arquitetura-do-projeto)
     - [Fontes](/README.md#fontes)
 - [Documentation (USA English)](/README.md#documentation)
     - [Documentation Summary](/README.md#documentation-summary)
     - [About the Project](/README.md#about-the-project)
+        - [Project Adaptations](/README.md#project-adaptations)
     - [Project Architecture](/README.md#project-architecture)
     - [Sources](/README.md#sources)
 
@@ -35,6 +37,8 @@
 The `Load Local Data Into S3` is a layered program with `controller`, `services`, and `repositories`, and its main functionality is to perform ETL (Extract, Transform, and Load) of `csv` files from a folder in Amazon S3.
 
 For this purpose, a Docker container is used, which will use the image in the [Dockerfile](/src/load-local-data-into-s3/Dockerfile). The source code and the file will be loaded into the container, and then the source code will be executed.
+
+![Diagram of the Load Local Data Into S3](/docs/diagrams/AWSDiagram!LoadLocalDataIntoS3.jpg)
 
 #### Required Policies for Load Local Data Into S3 Operation
 
@@ -135,6 +139,8 @@ The Source Code is executed as per the following Sequence Diagram:
 O `Load Local Data Into S3` é um programa desenvolvido em camadas com `controller`, `services` e `repositories`, e sua principal funcionalidade é fazer o ETL (Extract, Transform and Load ou Extrair, Transformar e Carregar) dos arquivos `csv` de uma pasta no Amazon S3.
 
 Para isso é usado um *container* *Docker* que usará a imagem no [Dockerfile](/src/load-local-data-into-s3/Dockerfile), no *container* será carregado o código fonte e o arquivo e em seguida executado o código fonte.
+
+![Diagram of the Load Local Data Into S3](/docs/diagrams/AWSDiagram!LoadLocalDataIntoS3.jpg)
 
 #### Políticas Necessárias para o Funcionamento do Load Local Data Into S3
 

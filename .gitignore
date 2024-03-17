@@ -6,3 +6,4 @@ dataset
 /src/*/logs
 __pycache__
 /src/*/layers
+demo
