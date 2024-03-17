@@ -48,6 +48,9 @@ The project was divided into three stages:
 
 The `AI Data Assistant` was developed using the [LangChain](https://python.langchain.com/docs/get_started/introduction) framework and the `Claude` LLM (Large Language Model) from [Anthropic](https://www.anthropic.com/news/introducing-claude) available on [AWS Bedrock](https://aws.amazon.com/pt/bedrock/?gclid=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE&trk=82b1c10f-8aa4-4e6c-ab52-c75550a4a31e&sc_channel=ps&ef_id=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE:G:s&s_kwcid=AL!4422!3!692006001529!e!!g!!aws%20bedrock!21054971723!164977098371) platform.
 
+Below you can see a brief demonstration of this project in action:
+
+[![DEMO video](https://img.youtube.com/vi/0plcjzrCP5c/0.jpg)](https://youtu.be/0plcjzrCP5c)
 
 #### Project Adaptations
 The data engineering process applied in the project was considerably simplified since the main focus was on working with the AI Data Assistant. However, it would be possible to add more stages to the Data Pipeline to meet the project's needs in cases where: (i) data from various sources (local, API, and other databases in AWS) are to be worked on, (ii) the AI Data Assistant database needs to adhere to a specific business rule, or (iii) unstructured or semi-structured data is involved.
@@ -107,6 +110,10 @@ O projeto foi dividido em três etapas:
 3. Criação de um Assistente de Dados inteligente de uma conexão ao banco de dados criado.
 
 O `AI Data Assistant` foi desenvolvido usando o framework da [LangChain](https://python.langchain.com/docs/get_started/introduction) e o LLM (*Large Language Model* ou Grande Modelo de Linguagem) `Claude` da [Anthropic](https://www.anthropic.com/news/introducing-claude) disponível no [AWS Bedrock](https://aws.amazon.com/pt/bedrock/?gclid=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE&trk=82b1c10f-8aa4-4e6c-ab52-c75550a4a31e&sc_channel=ps&ef_id=CjwKCAjw48-vBhBbEiwAzqrZVOqyWfTR8CxM6lHYtXWp8vFrG4lsCSRcKPuz8X0WcZjqPpXhyaGotBoCYcwQAvD_BwE:G:s&s_kwcid=AL!4422!3!692006001529!e!!g!!aws%20bedrock!21054971723!164977098371)
+
+Abaixo você pode ver uma breve apresentação de uma Demonstração do Projeto em ação:
+
+[![DEMO video](https://img.youtube.com/vi/sdnzc4mT8kI/0.jpg)](https://youtu.be/sdnzc4mT8kI)
 
 #### Adaptações do Projeto
 
